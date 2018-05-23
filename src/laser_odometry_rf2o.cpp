@@ -46,7 +46,7 @@ bool LaserOdometryRf2o::initialize(const sensor_msgs::LaserScanConstPtr& scan_ms
 
   rf2o_.init(*scan_msg, origin);
 
-//  rf2o_.setLaserPose(base_to_laser_);
+  rf2o_.setLaserPose(base_to_laser_);
 
   return rf2o_.is_initialized();
 }
